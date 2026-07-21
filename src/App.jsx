@@ -1,0 +1,39 @@
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+import Landing from "./pages/Landing.jsx";
+import Play from "./pages/Play.jsx";
+import Docs from "./pages/Docs.jsx";
+
+export default function App() {
+  const { pathname } = useLocation();
+  return (
+    <div className="app">
+      <nav className="topbar">
+        <Link to="/" className="logo">
+          🪓 ROBINHOOD TOWN
+        </Link>
+        <div className="topbar-links">
+          <Link to="/" className={pathname === "/" ? "active" : ""}>
+            Home
+          </Link>
+          <Link to="/play" className={pathname === "/play" ? "active" : ""}>
+            Play
+          </Link>
+          <Link to="/docs" className={pathname === "/docs" ? "active" : ""}>
+            Docs
+          </Link>
+        </div>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/play" element={<Play />} />
+        <Route path="/docs" element={<Docs />} />
+      </Routes>
+      <footer className="footer">
+        <span>RobinHood Town — built on Robinhood Chain (chainId 4663)</span>
+        <span className="footer-links">
+          <Link to="/docs">Docs</Link>
+        </span>
+      </footer>
+    </div>
+  );
+}
