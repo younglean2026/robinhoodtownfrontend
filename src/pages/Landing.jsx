@@ -51,7 +51,9 @@ export default function Landing() {
   return (
     <main>
       <section className="hero">
-        <h1>ROBINHOOD TOWN</h1>
+        <h1 className="hero-logo-wrap">
+          <img src="/logo.png" alt="ROBINHOOD TOWN" className="hero-logo" />
+        </h1>
         <p className="subtitle">The On-Chain Idle Lumber Game</p>
         <div className="hero-buttons">
           <Link to="/play" className="btn btn-gold">

@@ -9,7 +9,7 @@ export default function App() {
     <div className="app">
       <nav className="topbar">
         <Link to="/" className="logo">
-          🪓 ROBINHOOD TOWN
+          <img src="/logo.png" alt="RobinHood Town" className="logo-img" />
         </Link>
         <div className="topbar-links">
           <Link to="/" className={pathname === "/" ? "active" : ""}>
