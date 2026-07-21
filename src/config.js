@@ -24,7 +24,7 @@ export const TIERS = [
     name: "Common Lumberjack",
     rarity: "Common",
     wpr: 50,
-    priceEth: "0.01",
+    priceEth: "0.005",
     cap: 10000,
     image: "/lumberjacks/common.png",
     perks: ["Steady, reliable chopping", "Cheapest way into the forest", "Backbone of every operation"]
@@ -35,7 +35,7 @@ export const TIERS = [
     name: "Rare Frog",
     rarity: "Rare",
     wpr: 200,
-    priceEth: "0.02",
+    priceEth: "0.01",
     cap: 2000,
     image: "/lumberjacks/rare.png",
     perks: ["4x the output of a Common", "Amphibious axe technique", "Only 2,000 will ever exist"]
@@ -46,7 +46,7 @@ export const TIERS = [
     name: "Legendary CashCat",
     rarity: "Legendary",
     wpr: 550,
-    priceEth: "0.04",
+    priceEth: "0.02",
     cap: 500,
     image: "/lumberjacks/legendary.png",
     perks: ["11x the output of a Common", "Golden paws, golden logs", "Ultra scarce: 500 supply"]
@@ -57,7 +57,7 @@ export const TIERS = [
     name: "Mythic Vlad",
     rarity: "Mythic",
     wpr: 1200,
-    priceEth: "0.06",
+    priceEth: "0.03",
     cap: 100,
     image: "/lumberjacks/mythic.png",
     perks: ["24x the output of a Common", "Apex predator of the forest", "Just 100 in existence"]

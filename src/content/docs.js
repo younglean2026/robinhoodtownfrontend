@@ -67,10 +67,10 @@ export const DOCS_SECTIONS = [
       {
         type: "tiers",
         items: [
-          { name: "Wood Lumberjack", rarity: "COMMON", key: "common", wpr: "50", price: "0.01 ETH", cap: "10,000" },
-          { name: "Frog Lumberjack", rarity: "RARE", key: "rare", wpr: "200", price: "0.02 ETH", cap: "2,000" },
-          { name: "CashCat Lumberjack", rarity: "LEGENDARY", key: "legendary", wpr: "550", price: "0.04 ETH", cap: "500" },
-          { name: "Vlad Lumberjack", rarity: "MYTHIC", key: "mythic", wpr: "1,200", price: "0.06 ETH", cap: "100" }
+          { name: "Wood Lumberjack", rarity: "COMMON", key: "common", wpr: "50", price: "0.005 ETH", cap: "10,000" },
+          { name: "Frog Lumberjack", rarity: "RARE", key: "rare", wpr: "200", price: "0.01 ETH", cap: "2,000" },
+          { name: "CashCat Lumberjack", rarity: "LEGENDARY", key: "legendary", wpr: "550", price: "0.02 ETH", cap: "500" },
+          { name: "Vlad Lumberjack", rarity: "MYTHIC", key: "mythic", wpr: "1,200", price: "0.03 ETH", cap: "100" }
         ]
       },
       {
