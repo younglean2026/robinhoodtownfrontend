@@ -143,7 +143,7 @@ export const DOCS_SECTIONS = [
     blocks: [
       {
         type: "p",
-        text: "Claiming is manual: hit CLAIM in the game interface and your accumulated $RHT is sent straight to your connected wallet. Claims cost a small gas fee in ETH on Robinhood Chain."
+        text: "Claiming is manual: hit CLAIM in the game interface and your accumulated $RHT is sent straight to your connected wallet. Claims require a minimum of 1,000 $RHT accumulated."
       },
       {
         type: "p",

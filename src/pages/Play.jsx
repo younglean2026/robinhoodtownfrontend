@@ -157,7 +157,11 @@ export default function Play() {
       applyState(result.state);
       setNotice(`Claimed ${fmt(result.amount)} $RHT! Tx: ${result.txHash.slice(0, 14)}…`);
     } catch (err) {
-      setError(err.message === "PENDING_BELOW_MINIMUM" ? "Not enough $RHT to claim yet" : err.message);
+      setError(
+        err.message === "PENDING_BELOW_MINIMUM"
+          ? `Not enough $RHT to claim yet${state?.claim_min ? ` — minimum is ${fmt(Number(state.claim_min))} $RHT` : ""}`
+          : err.message
+      );
     } finally {
       setBusy(false);
     }
@@ -311,6 +315,11 @@ export default function Play() {
             <button className="btn btn-gold" onClick={handleClaim} disabled={busy}>
               {busy ? "…" : "CLAIM"}
             </button>
+            {Number(state?.claim_min) > 0 && (
+              <p className="muted" style={{ marginTop: 10 }}>
+                Min claim: {fmt(Number(state.claim_min))} $RHT
+              </p>
+            )}
           </div>
 
           <div className="card soon-card">
