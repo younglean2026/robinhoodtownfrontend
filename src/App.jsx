@@ -21,6 +21,9 @@ export default function App() {
           <Link to="/docs" className={pathname === "/docs" ? "active" : ""}>
             Docs
           </Link>
+          <a href="https://x.com/playrhtown" target="_blank" rel="noreferrer" title="Follow on X">
+            𝕏
+          </a>
         </div>
       </nav>
       <Routes>
