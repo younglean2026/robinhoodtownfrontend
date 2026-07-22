@@ -81,6 +81,33 @@ a {
   font-size: 10px;
 }
 
+.ca-badge {
+  font-family: inherit;
+  font-size: 9px;
+  color: var(--gold);
+  background: rgba(36, 23, 8, 0.5);
+  border: 3px solid var(--brown-ink);
+  padding: 7px 12px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.ca-badge-copy {
+  cursor: pointer;
+}
+
+.ca-badge-copy:hover {
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .ca-badge {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .topbar-links a.active {
   color: var(--green-bright);
   text-decoration: underline;

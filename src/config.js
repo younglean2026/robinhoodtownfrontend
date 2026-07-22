@@ -5,6 +5,9 @@ export const RPC_URL = import.meta.env.VITE_RPC_URL || "https://rpc.robinhood-ch
 export const EXPLORER_URL =
   import.meta.env.VITE_EXPLORER_URL || "https://explorer.robinhood-chain.example";
 export const TRADE_URL = import.meta.env.VITE_TRADE_URL || "#";
+// $RHT token contract address (CA). Leave empty until the Pons launch;
+// the topbar badge shows "launch soon" while unset and click-to-copy after.
+export const RHT_CA = import.meta.env.VITE_RHT_CA || "";
 
 export const CHAIN = {
   chainId: 4663,
