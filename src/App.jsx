@@ -35,6 +35,12 @@ export default function App() {
         <span>RobinHood Town — built on Robinhood Chain (chainId 4663)</span>
         <span className="footer-links">
           <Link to="/docs">Docs</Link>
+          <a href="https://x.com/playrhtown" target="_blank" rel="noreferrer">
+            𝕏
+          </a>
+          <a href="https://t.me/playrhtown" target="_blank" rel="noreferrer">
+            Telegram
+          </a>
         </span>
       </footer>
     </div>
