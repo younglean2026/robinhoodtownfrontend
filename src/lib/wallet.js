@@ -55,6 +55,9 @@ export async function getSigner() {
 }
 
 export async function getNftContract(withSigner = false) {
+  if (!/^0x[0-9a-fA-F]{40}$/.test(NFT_CONTRACT) || /^0x0{40}$/.test(NFT_CONTRACT)) {
+    throw new Error("NFT contract not configured yet. Set VITE_NFT_CONTRACT and redeploy.");
+  }
   const provider = new BrowserProvider(window.ethereum);
   const runner = withSigner ? await provider.getSigner() : provider;
   return new Contract(NFT_CONTRACT, NFT_ABI, runner);
