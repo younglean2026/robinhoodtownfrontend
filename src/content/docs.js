@@ -123,12 +123,16 @@ export const DOCS_SECTIONS = [
         text: "RobinHood Town runs on a fixed global emission model. The amount of $RHT distributed per period does not increase when more lumberjacks join the network — instead, players compete for their share of the same stream."
       },
       {
+        type: "p",
+        text: "Global emission rate: 60 $RHT per second (~5,184,000 $RHT per day), distributed proportionally among all deployed WPR."
+      },
+      {
         type: "code",
         lines: ["Player Reward = (Player WPR ÷ Total Network WPR) × Global $RHT Emissions"]
       },
       {
         type: "p",
-        text: "Example: with a 1% network share, you earn 1% of every $RHT emitted while your lumberjacks are deployed. If the network's total WPR grows and yours stays the same, your share — and your rewards — shrink."
+        text: "Example: with a 1% network share, you earn 1% of every $RHT emitted while your lumberjacks are deployed — 0.6 $RHT per second, roughly 51,840 $RHT per day. If the network's total WPR grows and yours stays the same, your share — and your rewards — shrink."
       }
     ]
   },
@@ -173,12 +177,12 @@ export const DOCS_SECTIONS = [
           { label: "Decimals", value: "18" },
           { label: "Liquidity", value: "Locked at graduation" },
           { label: "Initial rewards pool", value: "5% of supply" },
-          { label: "Emission", value: "Linear over gameplay" }
+          { label: "Emission", value: "60 $RHT/sec" }
         ]
       },
       {
         type: "p",
-        text: "Initial rewards pool: 5% of the supply was acquired at launch and allocated to the game rewards wallet, emitted linearly over gameplay."
+        text: "Initial rewards pool: 5% of the supply was acquired at launch and allocated to the game rewards wallet. Emission runs at 60 $RHT/sec, distributed among all deployed lumberjacks by WPR share. The rewards pool is continuously replenished by the Mint Revenue Flywheel — 50% of all mint ETH is used to buy back $RHT into the pool."
       },
       {
         type: "p",
